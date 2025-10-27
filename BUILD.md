@@ -24,6 +24,8 @@ This creates `dist/cli.cjs` (530 KB) - a single JavaScript bundle with all depen
 node dist/cli.cjs
 ```
 
+> **Note:** The application will keep running until you press `q` or `Ctrl+C` to exit.
+
 ## SEA Build (Single Executable Application)
 
 Create a completely standalone executable that doesn't require Node.js or node_modules.
@@ -41,6 +43,8 @@ yarn build:sea:macos   # or yarn build:sea:linux
 ./overpass2geojson-macos-arm64
 ```
 
+The application will display a greeting and wait for user input. Press `q` or `Ctrl+C` to exit.
+
 ### Windows
 
 ```bash
@@ -53,6 +57,8 @@ yarn build:sea:windows
 ```cmd
 overpass2geojson-windows-x64.exe
 ```
+
+The application will display a greeting and wait for user input. Press `q` or `Ctrl+C` to exit.
 
 ## Available Scripts
 
