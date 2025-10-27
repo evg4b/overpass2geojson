@@ -1,2 +1,7 @@
 node_modules
 dist
+
+# SEA build artifacts
+overpass2geojson*
+!overpass2geojson/
+sea-prep.blob
