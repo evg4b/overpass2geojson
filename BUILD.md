@@ -96,7 +96,7 @@ This is because SEA embeds the native Node.js binary for that platform.
 
 ## Technical Details
 
-### Rspack Configuration
+### Rspack Configuration (rspack.config.cjs)
 - **Entry:** `source/cli.tsx`
 - **Target:** Node.js (CommonJS)
 - **Mode:** Production
@@ -131,7 +131,7 @@ overpass2geojson/
 ├── source/              # TypeScript source
 ├── dist/                # Rspack output
 │   └── cli.cjs         # Main bundle
-├── rspack.config.js     # Rspack configuration
+├── rspack.config.cjs    # Rspack configuration
 ├── sea-config.json      # SEA configuration
 └── package.json         # NPM scripts
 ```
