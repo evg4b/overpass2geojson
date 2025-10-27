@@ -2,14 +2,13 @@
 	"name": "overpass2geojson",
 	"version": "0.0.0",
 	"license": "MIT",
-	"bin": "dist/cli.js",
-	"type": "module",
+	"bin": "dist/cli.cjs",
 	"engines": {
 		"node": ">=16"
 	},
 	"scripts": {
-		"build": "tsc",
-		"dev": "tsc --watch",
+		"build": "rspack build",
+		"dev": "rspack build --watch",
 		"test": "prettier --check . && xo && ava"
 	},
 	"files": [
@@ -20,6 +19,8 @@
 		"react": "^18.2.0"
 	},
 	"devDependencies": {
+		"@rspack/cli": "^1.5.8",
+		"@rspack/core": "^1.5.8",
 		"@sindresorhus/tsconfig": "^3.0.1",
 		"@types/react": "^18.0.32",
 		"@vdemedes/prettier-config": "^2.0.1",
