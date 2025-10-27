@@ -1,0 +1,27 @@
+{
+  "name": "ddddddd",
+  "version": "1.0.0",
+  "description": "CLI-приложение для конвертации данных из Overpass API (OpenStreetMap) в формат GeoJSON.",
+  "main": "dist/overpass2geojson-bundle.cjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node dist/overpass2geojson-bundle.cjs",
+    "build": "rsbuild build",
+    "build:sea": "node --experimental-sea-config sea-config.json",
+    "start": "npm run build && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "osmtogeojson": "^3.0.0-beta.5"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.1.11",
+    "@rsbuild/plugin-type-check": "^1.0.1",
+    "@types/node": "^22.0.0",
+    "postject": "^1.0.0-alpha.6",
+    "typescript": "^5.6.0"
+  },
+  "packageManager": "yarn@4.10.3"
+}
